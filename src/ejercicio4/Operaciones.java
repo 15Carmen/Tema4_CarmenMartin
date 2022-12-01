@@ -9,24 +9,42 @@ public class Operaciones {
     globales para realizar las pruebas desde el método main().
      */
 
-    double num1 = 24;
-    double num2 = 3;
-    static Operaciones o = new Operaciones();
+    //Declaramos las variables globales
+    double num1, num2;                          //Variables donde vamos a guardar los numeros introducidos por el usuario y que vamos a utilizar en nuestros metodos
 
+    /**
+     * Metodo que va a calcular la suma de las dos variables y
+     * @return el resultado de la suma
+     */
     double suma() {
-        return o.num1 + o.num2;
+        return num1+num2;
     }
 
+    /**
+     * Metodo que va a calcular la resta de las dos variables y
+     * @return el resultado de resta
+     * Precondición: Si no se quiere obtener un resultado negativo, num1 (el primero en ser introducido)
+     * debe ser mayor que num2
+     */
     double resta() {
-        return o.num1 - o.num2;
+        return num1-num2;
     }
 
+    /**
+     * Metodo que va a calcular la multiplicación de las dos variables y
+     * @return el resultado de la multiplicación
+     */
     double multiplicacion() {
-        return o.num1 * o.num2;
+        return num1*num2;
     }
 
+    /**
+     * Metodo que va a calcular la resta de las dos variables y
+     * @return el resultado de resta
+     * Precondición: num1 (el primero en ser introducido) debe ser mayor que num2
+     */
     double division() {
-        return o.num1 / o.num2;
+        return num1/num2;
     }
 
 }

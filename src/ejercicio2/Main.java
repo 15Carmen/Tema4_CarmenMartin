@@ -14,12 +14,18 @@ public class Main {
      */
     public static void main(String[] args) {
 
+        //Declaramos el scanner para poder leer por consola
         Scanner sc = new Scanner(System.in);
 
+        //Le pedimos al usuario que introduzca el radio de la esfera
         System.out.println("Introduzca el radio de la esfera: ");
-        Esfera.radio=sc.nextInt();
+        Esfera.radio=sc.nextInt();  //Guardamos la respuesta del usuario en la variable estática radio declarada en la clase Esfera()
 
+        //Imprimimos por pantalla el resultado de los metodos creados en la clase Esfera
         System.out.println("La superficie de la esfera es: " + Esfera.superficie());
         System.out.println("El volumen de la esfera es: " + Esfera.volumen());
+
+        //Cerramos el scanner
+        sc.close();
     }
 }

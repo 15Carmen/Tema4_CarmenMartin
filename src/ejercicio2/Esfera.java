@@ -11,12 +11,21 @@ public class Esfera {
 
      */
 
+    //Declaramos la variable estática radio
     static int radio;
 
+    /**
+     * Método que calculará la superficie de una esfera según el radio que tenga y
+     * @return el resultado del cálculo
+     */
     static double superficie(){
         return (4*Math.PI)*Math.pow(radio, 2);
     }
 
+    /**
+     * Método que calculará el área de una esfera según el radio que tenga y
+     * @return el resultado del cálculo
+     */
     static double volumen(){
         return (4*Math.PI/3)*Math.pow(radio, 3);
     }
