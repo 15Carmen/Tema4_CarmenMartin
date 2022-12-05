@@ -24,13 +24,13 @@ public class FuncionesRecursivas {
      * @return
      */
     static int sumatorio(int numero) {
-        //Declaramos las varaible
+        //Declaramos las variables
         int resultado = 0;  //Variable donde guardaremos el resultado que terminaremos devolviendo
 
-        if (numero == 1) {
-            resultado = 1;
-        }else {
-            resultado = numero + sumatorio(numero-1);
+        if (numero == 1) {  //Si numero es igual a 1
+            resultado = 1;  //Igualamos el resultado a 1
+        } else {             //Si el numero es distinto de 1
+            resultado = numero + sumatorio(numero - 1);   //Igualamos el resultado a el numero más el metodo sumatorio pasandole por parámetros el numero menos 1
         }
         return resultado;                   //Devolvemos la variable resultado
     }
@@ -43,13 +43,15 @@ public class FuncionesRecursivas {
      * @return el resultado de la elevacion de 'a' a 'n'
      */
     static double potencia(double a, int n) {
-        double resultado = 0;
-       if (n==0){
-           resultado=1;
-       }else {
-           resultado = a*potencia(a, n-1);
-       }
-       return resultado;
+        //Declaramos las variables
+        double resultado = 0;   //Variable donde guardaremos el resultado que terminaremos devolviendo
+
+        if (n == 0) {           //Si n es igual a 0
+            resultado = 1;      //Igualamos el resultado a 1
+        } else {                //Si n es distinto de 0
+            resultado = a * potencia(a, n - 1); //Igualamos el resultado a 'a' por el metodo potencia al que le pasamos por parametros 'a' y 'n-1'
+        }
+        return resultado;       //Devolvemos la variable resultado
     }
 
     /**

@@ -3,6 +3,13 @@ package ejercicio3;
 import java.util.Scanner;
 
 public class Main {
+
+    /*
+    Añade las funciones que creaste en el ejercicio 5 del boletín SOBRECARGA DE FUNCIONES, añádelas a una única
+    clase denominada NumerosAleatorios. Las funciones de esta clase deben ser estáticas. Desde el método main(), que
+    estará definido en otra clase distinta, se pedirán los valores correspondientes para probar estas funciones.
+     */
+
     public static void main(String[] args) {
 
         //Declaramos las varaibles
