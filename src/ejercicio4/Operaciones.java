@@ -10,7 +10,7 @@ public class Operaciones {
      */
 
     //Declaramos las variables globales
-    double num1, num2;                          //Variables donde vamos a guardar los numeros introducidos por el usuario y que vamos a utilizar en nuestros metodos
+    double num1, num2;  //Variables donde vamos a guardar los numeros introducidos por el usuario y que vamos a utilizar en nuestros metodos
 
     /**
      * Metodo que va a calcular la suma de las dos variables y
